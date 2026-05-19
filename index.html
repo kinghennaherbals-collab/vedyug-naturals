@@ -1,0 +1,293 @@
+export default function VedyugNaturalsLandingPage() {
+  return (
+    <div className="min-h-screen bg-white text-gray-800 font-sans">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-green-50 to-white py-16 px-6 lg:px-20">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 className="text-5xl lg:text-6xl font-bold text-green-800 leading-tight">
+              VEDYUG NATURALS
+            </h1>
+            <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+              Premium Quality Natural Henna Products for Bridal, Professional,
+              and Herbal Use. Trusted Manufacturing with Rich Color,
+              Smooth Texture, and Natural Ingredients.
+            </p>
+
+            <div className="flex flex-wrap gap-4 mt-8">
+              <a
+                href="https://wa.me/919376628704"
+                target="_blank"
+                className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-2xl shadow-lg transition"
+              >
+                WhatsApp Order
+              </a>
+
+              <a
+                href="https://www.instagram.com/_henna_mehandi?igsh=MWdxb3NxdjJ6OHo3aA=="
+                target="_blank"
+                className="border border-green-700 text-green-700 hover:bg-green-50 px-6 py-3 rounded-2xl transition"
+              >
+                Visit Instagram
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-white rounded-3xl shadow-2xl p-6 border border-green-100">
+              <img
+                src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop"
+                alt="Henna Product"
+                className="rounded-2xl w-full h-[450px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-16 px-6 lg:px-20 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
+            Why Choose Vedyug Naturals?
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              "Premium Quality",
+              "Natural Ingredients",
+              "Rich Dark Stain",
+              "Manufacturing & Bulk Supply",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-green-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition"
+              >
+                <h3 className="text-xl font-semibold text-green-800">
+                  {item}
+                </h3>
+                <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+                  Carefully processed products designed for professional and
+                  bridal application with premium results.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="py-16 px-6 lg:px-20 bg-green-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-10">
+            <h2 className="text-4xl font-bold text-green-800">
+              Our Premium Products
+            </h2>
+            <span className="text-sm text-gray-500">
+              Manufacturing • Wholesale • Export Supply
+            </span>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "BAQ 5 Filter Henna Powder",
+                price: "₹240 / KG",
+                image: "https://i.imgur.com/Ty9Qx8M.jpeg",
+              },
+              {
+                name: "Henna Mix Oil",
+                price: "₹100 / 100ML",
+                image: "https://i.imgur.com/FfL9L5f.jpeg",
+              },
+              {
+                name: "Mehandi Oil",
+                price: "₹120 / 100ML",
+                image: "https://i.imgur.com/0q0jqkD.jpeg",
+              },
+              {
+                name: "Eucalyptus Oil",
+                price: "₹140 / 100ML",
+                image: "https://i.imgur.com/w6mFG0I.jpeg",
+              },
+              {
+                name: "Lavender Oil",
+                price: "₹160 / 100ML",
+                image: "https://i.imgur.com/JZ3C6hM.jpeg",
+              },
+              {
+                name: "Bridal Oil",
+                price: "₹130 / 100ML",
+                image: "https://i.imgur.com/5hB9zQ4.jpeg",
+              },
+              {
+                name: "Tea Tree Oil",
+                price: "₹180 / 100ML",
+                image: "https://i.imgur.com/fN1I2An.jpeg",
+              },
+            ].map((product, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition"
+              >
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-80 object-cover"
+                />
+
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold text-green-800">
+                    {product.name}
+                  </h3>
+
+                  <p className="mt-3 text-xl font-bold text-gray-700">
+                    {product.price}
+                  </p>
+
+                  <a
+                    href="https://wa.me/919376628704"
+                    target="_blank"
+                    className="mt-6 block text-center w-full bg-green-700 text-white py-3 rounded-2xl hover:bg-green-800 transition"
+                  >
+                    Enquire Now
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Private Labeling Section */}
+      <section className="py-16 px-6 lg:px-20 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-green-800">
+              Private Label Manufacturing
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Start your own brand with Vedyug Naturals. We provide premium quality
+              henna powder and essential oils without branding for resellers,
+              wholesalers, and private labeling businesses.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              ["BAQ Henna Powder", "₹250 / KG"],
+              ["Henna Mix Oil", "₹110 / 100ML"],
+              ["Mehandi Oil", "₹130 / 100ML"],
+              ["Bridal Oil", "₹140 / 100ML"],
+              ["Eucalyptus Oil", "₹150 / 100ML"],
+              ["Tea Tree Oil", "₹190 / 100ML"],
+              ["Lavender Oil", "₹170 / 100ML"],
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="border border-green-100 bg-green-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition"
+              >
+                <h3 className="text-2xl font-semibold text-green-800">
+                  {item[0]}
+                </h3>
+
+                <p className="mt-4 text-3xl font-bold text-gray-700">
+                  {item[1]}
+                </p>
+
+                <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+                  Premium unbranded manufacturing supply available for your own
+                  custom brand packaging and resale business.
+                </p>
+
+                <a
+                  href="https://wa.me/917568538704"
+                  target="_blank"
+                  className="mt-6 inline-block bg-green-700 text-white px-6 py-3 rounded-2xl hover:bg-green-800 transition"
+                >
+                  Start Private Labeling
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}}
+      <section className="py-16 px-6 lg:px-20 bg-white">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
+              alt="Manufacturing"
+              className="rounded-3xl shadow-xl"
+            />
+          </div>
+
+          <div>
+            <h2 className="text-4xl font-bold text-green-800 mb-6">
+              About Us
+            </h2>
+
+            <p className="text-gray-600 leading-relaxed text-lg">
+              Vedyug Naturals is dedicated to manufacturing high-quality
+              herbal henna and beauty products with a focus on purity,
+              consistency, and customer satisfaction. We provide products for
+              bridal artists, resellers, wholesalers, and export businesses.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <div className="bg-green-50 px-6 py-4 rounded-2xl shadow-sm">
+                <h3 className="text-2xl font-bold text-green-700">100%</h3>
+                <p className="text-gray-600 text-sm">Natural Focus</p>
+              </div>
+
+              <div className="bg-green-50 px-6 py-4 rounded-2xl shadow-sm">
+                <h3 className="text-2xl font-bold text-green-700">Bulk</h3>
+                <p className="text-gray-600 text-sm">Manufacturing Supply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="py-16 px-6 lg:px-20 bg-green-800 text-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold">Contact Vedyug Naturals</h2>
+
+          <p className="mt-6 text-lg text-green-100">
+            For wholesale, manufacturing, reseller, and export enquiries,
+            connect with us directly.
+          </p>
+
+          <div className="mt-10 flex flex-col md:flex-row justify-center gap-6">
+            <a
+              href="tel:+919376628704"
+              className="bg-white text-green-800 px-8 py-4 rounded-2xl font-semibold shadow-lg"
+            >
+              Call: 9376628704
+            </a>
+
+            <a
+              href="tel:+917568538704"
+              className="bg-white text-green-800 px-8 py-4 rounded-2xl font-semibold shadow-lg"
+            >
+              Call: 7568538704
+            </a>
+          </div>
+
+          <div className="mt-8">
+            <a
+              href="https://www.instagram.com/_henna_mehandi?igsh=MWdxb3NxdjJ6OHo3aA=="
+              target="_blank"
+              className="underline text-green-100 hover:text-white"
+            >
+              Follow Us on Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
